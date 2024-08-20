@@ -1,0 +1,164 @@
+.s2d2-btn {
+    position: relative;
+    margin-left: 20px;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.s2d2-btn::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #32333a;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.s2d2-btn::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #32333a;
+    transition: 0.5s;
+}
+
+.s2d2-btn:hover::before,
+.s2d2-btn:hover::after {
+    transform: scale(0)
+}
+
+.s2d2-btn:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.btn-telesign{
+    background-color: #0917a1;
+    color: white;
+}
+
+.btn-telesign:hover{
+    background-color: #1e33ea;
+    color: white;
+}
+
+
+.bg-very-low{
+    --bg-opacity:1;
+    background-color:rgba(86, 163, 76, 1) !important;
+}
+
+.bg-low{
+    --bg-opacity:1;
+    background-color:rgba(136, 214, 128, 1)!important;
+}
+
+.bg-medium-low{
+    --bg-opacity:1;
+    background-color:rgba(246, 203, 117, 1)!important;
+}
+
+.bg-medium{
+    --bg-opacity:1;
+    background-color:rgba(238, 147, 40, 1)!important;
+}
+
+.bg-high{
+    --bg-opacity:1;
+    background-color:rgba(216, 122, 128, 1)!important;
+}
+
+.bg-very-high{
+    --bg-opacity:1;
+    background-color:rgba(225, 90, 87, 1)!important;
+}
+
+
+.iconSize{
+    height: 40px !important;
+}
+
+
+
+.bgSpinner {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--base-color);
+    --base-color: #2c2d33;
+    /*use your base color*/
+}
+
+.loaderSpinner {
+    width: 60px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    background-color: var(--base-color);
+}
+
+.loaderSpinner::before {
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFF;
+    background-image: radial-gradient(circle 8px at 18px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 18px 0px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 0px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 36px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 18px 36px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 30px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 5px 30px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 5px 5px, var(--base-color) 100%, transparent 0);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: rotationBack 3s linear infinite;
+}
+
+.loaderSpinner::after {
+    content: '';
+    left: 35px;
+    top: 15px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #FFF;
+    background-image: radial-gradient(circle 5px at 12px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 12px 0px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 0px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 24px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 12px 24px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 20px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 3px 20px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 3px 3px, var(--base-color) 100%, transparent 0);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: rotationBack 4s linear infinite reverse;
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.oneNumberCapitalize{
+    text-transform: capitalize;
+}
+
+.closer-to-sign{
+    padding-left: 30px !important;
+}
+
+.roiNumberInput{
+    text-align: center;
+    outline: none;
+    background: none;
+    border: none;
+}
