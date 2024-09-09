@@ -26,7 +26,7 @@ class TelesignMySqlConfigServiceProvider extends ServiceProvider
         $distContent = file_get_contents($distFile);
 
         // Path to the config.xml file outside the Laravel app directory
-        $configFile = base_path('../config/config.xml');
+        $configFile = base_path('../config/webAppConfig.xml');
 
         // Read database.config.xml file
         $xml = simplexml_load_file($configFile);
